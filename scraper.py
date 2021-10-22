@@ -211,5 +211,5 @@ async def carlimar(ctx):
    await ctx.send(promedio_3) 
    os.execv(sys.executable, ['python'] + sys.argv)
 
-client.run('ODk5Nzk1NzcyMjY1MDk5MzM0.YW3-HQ.2CjrZs5kPlAC0McEccYZVNLDpO8')   
+client.run('token')   
 
