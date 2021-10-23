@@ -5,7 +5,7 @@ import json
 
 
 
-url = "https://api.axie.management/v1/overview/0x58c9aab651cd049599e6d9a1f9aa1f340c50325a"
+url = "https://api.axie.management/v1/overview/schoolar_wallet"
 
 payload = ""
 headers = {
@@ -61,7 +61,7 @@ juas=funt(x)
    
 
 
-url = "https://api.axie.management/v1/overview/0x4d5a0612604d8aafddcd77093ed347b4020a2ad9"
+url = "https://api.axie.management/v1/schoolar_wallet"
 
 payload = ""
 headers = {
@@ -121,7 +121,7 @@ juas_2=funt(x_2)
 
 import requests
 
-url = "https://api.axie.management/v1/overview/0x9f8cf62581971816f29eeb86877ab49bcc318784"
+url = "https://api.axie.management/v1/overview/schoolar_wallet"
 
 payload = ""
 headers = {
