@@ -1,8 +1,9 @@
 import requests
 import json
-
-
-
+import sys
+import os
+from asyncio import events
+from discord.ext import commands
 
 url = "https://api.axie.management/v1/overview/schoolar_wallet"
 
@@ -21,6 +22,8 @@ headers = {
    "accept-language": "en-US,en;q=0.9,es-CL;q=0.8,es;q=0.7",
    "if-none-match": "W/ea-N84iKYoma0y7hc44E6AxTSQRr6Q"
 }
+
+
 
 response = requests.request("GET", url, data=payload, headers=headers)
 
@@ -59,7 +62,7 @@ juas=funt(x)
    
 
 
-url = "https://api.axie.management/v1/schoolar_wallet"
+url_2 = "https://api.axie.management/v1/schoolar_wallet"
 
 payload = ""
 headers = {
@@ -77,7 +80,7 @@ headers = {
    "if-none-match": "W/^\^eb-pSrZ1yxEHS+mRQzXhui5c8fGjl8^^"
 }
 
-response_2 = requests.request("GET", url, data=payload, headers=headers)
+response_2 = requests.request("GET", url_2, data=payload, headers=headers)
 
 y_2 = json.loads(response_2.text)
 
@@ -104,9 +107,9 @@ juas_2=funt(x_2)
 
 
 
-import requests
 
-url = "https://api.axie.management/v1/overview/schoolar_wallet"
+
+url_3 = "https://api.axie.management/v1/overview/schoolar_wallet"
 
 payload = ""
 headers = {
@@ -124,7 +127,7 @@ headers = {
    "if-none-match": "W/^\^ea-3fFmFUsnQX2HyL194lEU3DmCdQ4^^"
 }
 
-response_3 = requests.request("GET", url, data=payload, headers=headers)
+response_3 = requests.request("GET", url_3, data=payload, headers=headers)
 
 y_3 = json.loads(response_3.text)
 
@@ -158,8 +161,7 @@ promedio_2 = ("Llevas en total " + b_2 + " " + "slp" + " " + "con un promedio di
 promedio_3 = ("Llevas en total " + b_3 + " " + "slp" + " " + "con un promedio diario de: " + z_3  +  juas_3 +  ", "
 + "hoy hiciste " + hoy_3 + " " + "y ayer " + " " + ayer_3 + ".")
 
-import sys
-import os
+
 @client.event
 async def on_ready():
    print('bot online')
