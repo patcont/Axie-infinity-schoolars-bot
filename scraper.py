@@ -1,4 +1,3 @@
-
 import requests
 import json
 
@@ -41,21 +40,20 @@ hoy= str(y["slp"]["todaySoFar"])
 ayer= str(y["slp"]["yesterdaySLP"])
 
 
-def funt(x):
+def funt(i):
 
-   if x==None:
+   if i==None:
     return ":sweat_smile:" 
    
-   elif x>150 or x==150:
+   elif i>150 or i==150:
     return ":partying_face:"
-   elif x>100 and x<150 or x==100:
+   elif i>100 and i<150 or i==100:
     return ":smiley:"
-   elif x<100:
+   elif i<100:
     return ":sweat:"
+
+    
 juas=funt(x)
-
-
-
 
 
    
@@ -95,22 +93,9 @@ hoy_2= str(y_2["slp"]["todaySoFar"])
 
 ayer_2= str(y_2["slp"]["yesterdaySLP"])
 
-      
-def funt(x_2):
 
-   
-   if x_2==None:
-    return ":sweat_smile:" 
-   elif x_2>150 or x_2==150:
-    return ":partying_face:"
-   elif x_2>100 and x_2<150 or x_2==100:
-    return ":smiley:"
-   elif x_2<100:
-    return ":sweat:"
+
 juas_2=funt(x_2)
-
-
-
 
 
 
@@ -155,21 +140,9 @@ hoy_3= str(y_3["slp"]["todaySoFar"])
 
 ayer_3= str(y_3["slp"]["yesterdaySLP"])
 
-def funt(x_3):
-   if x_3==None:
-    return ":sweat_smile:" 
-   elif x_3>150 or x_3==150:
-    return ":partying_face:"
-   elif x_3>100 and x_3<150 or x_3==100:
-    return ":smiley:"
-   elif x_3<100:
-    return ":sweat:"
 juas_3=funt(x_3)
 
-
-
-
-      
+print(juas,juas_2,juas_3)
 
 from asyncio import events
 import discord
@@ -197,19 +170,18 @@ async def actualizar(ctx):
   os.execv(sys.executable, ['python'] + sys.argv)
 
 @client.command()
-async def chabely(ctx):
+async def player_1(ctx):
    await ctx.send(promedio)
    os.execv(sys.executable, ['python'] + sys.argv)
    
 @client.command()
-async def sheyla(ctx):
+async def player_2(ctx):
    await ctx.send(promedio_2)
    os.execv(sys.executable, ['python'] + sys.argv)
 
 @client.command()
-async def carlimar(ctx):
+async def player_3(ctx):
    await ctx.send(promedio_3) 
    os.execv(sys.executable, ['python'] + sys.argv)
 
 client.run('token')   
-
