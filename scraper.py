@@ -50,20 +50,18 @@ def scraping(r):
  ayer= str(y["slp"]["yesterdaySLP"])
 
 
- def funt(i):
-
-   if i==None:
-    return ":sweat_smile:" 
+ if x==None:
+  juas=":sweat_smile:" 
    
-   elif i>150 or i==150:
-    return ":partying_face:"
-   elif i>100 and i<150 or i==100:
-    return ":smiley:"
-   elif i<100:
-    return ":sweat:"
+ elif x>150 or x==150:
+    juas=":partying_face:"
+ elif x>100 and x<150 or x==100:
+    juas= ":smiley:"
+ elif x<100:
+    juas= ":sweat:"
 
     
- juas=funt(x)
+
  promedio = ("Llevas en total " + b + " " + "slp" + " " + "con un promedio diario de: " + z + juas +  ", "
 + "hoy hiciste " + hoy + " " + "y ayer " + " " + ayer + ".")
 
